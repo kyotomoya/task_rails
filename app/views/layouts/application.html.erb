@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsService</title>
+    <title>Pote Shere</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,43 @@
   </head>
 
   <body>
+  <div class="footer-fixed">
+    <header class="header">
+      <div class="contents-width">
+        <div class="header-area">
+          <div class="header-logo">
+            <h1><%= link_to "pote shere", root_path %></h1>
+          </div>
+          <div class="header-search">
+            <div class="area">
+              <p>エリア</p>
+            </div>
+            <div class="keyword">
+              <p>キーワード</p>
+            </div>
+          </div>
+          <div class="nav-area">
+            <nav>
+              <ul class="nav-flex">
+                <li class="login">
+                  <%= link_to "ログイン", new_user_session_path %>
+                </li>
+                <li class="registration">
+                  <%= link_to "新規作成", new_user_registration_path %>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <%= link_to 'アカウント変更', edit_user_registration_path %>
     <%= yield %>
+    <footer>
+      <h3>©︎ 2020 POTEPAN.INC</h3>
+    </footer>
+  </div>
   </body>
 </html>

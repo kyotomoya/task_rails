@@ -1,0 +1,43 @@
+<header class="edit-header">
+  <div class="head">
+    <div class="account">
+      <%= link_to "アカウント", users_show_path %>
+    </div>
+    <div class="profile">
+      <%= link_to 'プロフィール', edit_user_registration_path %>
+    </div>
+  </div>
+</header>
+<div class="background-edit">
+  <div class="profile-area">
+    <div class="profile-width">
+      <div class="profile-title">
+          <h2>アカウント情報</h2>
+      </div>
+      <div class="show-content-head position">
+        <h3>アカウント画像</h3>
+        <img src=<%= @user.image %> class = "icon_image">
+      </div>
+      <div class="show-content">
+        <h3 class="label-show">アカウント名</h3>
+        <div class="show-content-right">
+          <%= @user.name %>
+        </div>
+      </div>
+      <div class="show-content">
+        <h3 class="label-show">メールアドレス</h3>
+        <div class="show-content-right">
+          <%= @user.email %>
+        </div>
+      </div>
+      <div class="show-content">
+        <h3 class="label-show">紹介文</h3>
+        <div class="show-content-right">
+          <%= @user.profile%>
+        </div> 
+      </div>
+      <%= link_to "編集", edit_user_registration_path %><br>
+      <%= link_to "ログアウト", destroy_user_session_path %>
+    </div>
+  </div>
+</div>

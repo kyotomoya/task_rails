@@ -20,9 +20,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # PUT /resource
-  # def update
-  #   super
-  # end
+   #def update
+    
+     #if account_update_params[:avatar].present?
+      #resource.avatar.attach(account_update_params[:avatar])    
+    #end
+   #end
 
   # DELETE /resource
   # def destroy
@@ -38,6 +41,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
+  
+
   # protected
 
   # If you have extra params to permit, append them to the sanitizer.
@@ -51,12 +56,17 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # The path used after sign up.
-  # def after_sign_up_path_for(resource)
-  #   super(resource)
-  # end
+   def after_sign_up_path_for(resource)
+    edit_user_registration_path(resource)
+   end
 
   # The path used after sign up for inactive accounts.
-  # def after_inactive_sign_up_path_for(resource)
-  #   super(resource)
-  # end
+  def after_inactive_sign_up_path_for(resource)
+    edit_user_registration_path(resource)
+  end
+  def after_update_path_for(resource)
+    users_show_path 
+  end
+  
 end
+

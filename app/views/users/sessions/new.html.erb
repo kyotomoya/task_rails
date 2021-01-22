@@ -1,26 +1,45 @@
-<h2>Log in</h2>
-
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
-
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+<div class="create-background">
+    <div class="create-area">
+      <div class="create-contents">
+        <div class="create-content create-content-head">
+          <h2>ログイン</h2>
+        </div>
+        <div class="create-content">
+          <div class="field">
+            <div class="label">
+              <%= f.label :email ,"必須" %>
+            </div>
+            <div class="input">
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "email" %>
+            </div>
+          </div>
+        </div>
+        <div class="create-content">
+          <div class="field">
+            <div class="label">
+              <%= f.label :password ,"必須" %>
+            </div>
+            <div class="input">
+              <%= f.password_field :password, autocomplete: "current-password", placeholder: "password" %>
+            </div>
+          </div>
+        </div>
+        <% if devise_mapping.rememberable? %>
+          <div class="field-retention">
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me %>
+          </div>
+        <% end %>
+        <div class="actions button">
+          <%= f.submit "ログイン" %>
+        </div>
+        <div class="actions">
+          <%= link_to "アカウントを新規作成", new_user_registration_path %>
+        </div>
+      </div>
     </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
   </div>
 <% end %>
 
-<%= render "users/shared/links" %>
+<!--<%= render "users/shared/links" %>-->

@@ -1,0 +1,72 @@
+.create-background {
+  background-color: silver;
+  padding: 10px;
+}
+.create-area {
+  background-color: #fff;
+  width: 600px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.create-contents {
+  padding: 20px;
+  
+}
+.create-content {
+  height: 15%;
+  width: 300px;
+  background-color: #fff;
+  margin: 0px auto;
+}
+.create-content-head {
+  padding: 12px;
+}
+.create-content h2 {
+  text-align: center;
+}
+.field {
+  display: flex;
+  padding: 12px;
+}
+.label {
+  font-size: 20px;
+  background-color: red;
+  color: #fff;
+  border-radius: 6px;
+  padding: 2px;
+}
+.label-title {
+  font-size: 20px;
+  margin: 0 5px;
+}
+.style-none {
+  display: none;
+}
+.input {
+  border: solid 1px silver;
+  margin-left: 20px;
+}
+#user_name, #user_email, #user_password, #user_password_confirmation {
+  height: 100%;
+}
+.actions {
+  text-align: center;
+  padding: 6px;
+  width: 300px;
+  margin: 10px auto;
+}
+.actions input {
+  width: 100%;
+}
+.login-button {
+  text-align: center;
+  padding: 10px;
+}
+.button {
+  border: solid 1px;
+  background-color: rgb(4, 240, 142);
+}
+.field-retention {
+  text-align: center;
+  margin: 10px;
+}
