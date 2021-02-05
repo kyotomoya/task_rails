@@ -6,7 +6,9 @@ class ApplicationController < ActionController::Base
 
   # deviseコントローラーにストロングパラメータを追加する          
   before_action :configure_permitted_parameters, if: :devise_controller?
-
+  def index
+    @rooms = Room.search(params[:search])
+  end
   
  
   protected
@@ -19,6 +21,7 @@ class ApplicationController < ActionController::Base
     #devise_parameter_sanitizer.permit(:account_update, keys: %i(avatar))
     devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :image])
     devise_parameter_sanitizer.permit(:account_update, keys: [:image])
+    
     
 
   end

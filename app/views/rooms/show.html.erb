@@ -1,0 +1,55 @@
+<%= form_for @room do |f| %>
+<div class="background">
+  <div class="room-show-area">
+    <div class="room-show-head">
+      <h2>ルーム詳細</h2>
+    </div>
+    <div class="room-details">
+      <div class="room-contents">
+        <div class="room-image-area">
+          <img src=<%= @room.room_image %> class="room-image">
+        </div>
+        <div class="room-content">
+          <div class="room-info">
+            <div class="room-name">
+              <%= @room.room_name %>
+            </div>
+            <div class="room-address">
+              <%= @room.room_address %>
+            </div>
+          </div>
+        </div>
+        <div class="room-text">
+          <%= @room.room_text %>
+        </div>
+      </div>
+      
+      <div class="room-reservation">
+        <div class="room-reservation-contents">
+          <div class="room-price">
+            <%= @room.room_price %>
+            <p>/ 日</p>
+          </div>
+          <div class="reservation-start">
+            <%= f.date_field :start_date %>
+          </div>
+          <div class="reservation-end">
+           <%= f.date_field :end_date %>
+          </div>
+          <div class="reservation-people">
+            <%= f.number_field :people %>
+          </div>
+          
+          <div class="reservation-button">
+            <%= f.submit "予約する" %>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div>
+    <li><%= link_to "ルーム一覧に戻る", :rooms %></li>
+  </div>
+</div>
+<% end %>

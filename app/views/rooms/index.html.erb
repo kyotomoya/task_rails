@@ -1,0 +1,39 @@
+<div class="background">
+  <div class="background-width">
+    <div class="reservation-index-title">
+        <h2>Room一覧</h2>
+    </div>
+    <table> 
+        <thead>
+            <tr class="reservation-index-contents">
+                <th class="room-index-name" >名前</th>
+                <th class="room-index-text">紹介文</th>
+                <th class="room-index-price">価格</th>
+                <th class="room-index-address">住所</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @rooms.each do |room| %>
+                <tr class="reservation-index-contents">
+                    <td class="room-index-name"><%= room.room_name %></td>
+                    <td class="room-index-text"><%= room.room_text %></td>
+                    <td class="room-index-price"><%= room.room_price %></td>
+                    <td class="room-index-address"><%= room.room_address %></td>
+                    <td><%= link_to "参照", [:edit, room] %></td>
+                    <td><%= link_to "削除", room, method: :delete, data: { confirm: "本当に削除しますか？" } %></td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+

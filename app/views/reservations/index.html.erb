@@ -1,0 +1,49 @@
+<div class="background">
+  <div class="background-width">
+    <div class="reservation-index-title">
+      <h2>予約済みルーム一覧</h2>
+    </div>
+    <table> 
+      <div>
+        <thead>
+          <tr class="reservation-index-contents">
+              <th class="reservation-index-name">ルーム名</th>
+              <th class="reservation-index-text">ルーム紹介</th>
+              <th class="reservation-index-price">合計料金</th>
+              <th class="reservation-index-start">開始日</th>
+              <th class="reservation-index-end">終了日</th>
+          </tr>
+        </thead>
+      </div>
+        <tbody>
+        <% @reservations.each do |reservation| %>
+        <tr class="reservation-index-contents">
+          <td class="reservation-index-name">
+            <%= reservation.name %>
+          </td>
+          <td class="reservation-index-text">
+            <%= reservation.text %>
+          </td>
+          <td class="reservation-index-price">
+            <%= reservation.price %>
+          </td>
+          <td class="reservation-index-start">
+            <%= reservation.start_date %>
+          </td>
+          <td class="reservation-index-end">
+            <%= reservation.end_date%>
+          </td>
+          <td>
+            <%= link_to "参照", reservation %>
+          </td>
+          <td>
+            <%= link_to "削除", reservation, method: :delete, data: { confirm: "本当に削除しますか?" } %>
+          </td>
+        </tr>
+        <% end %>
+        </tbody>
+      </table>
+   
+  </div>
+</div>
+ 

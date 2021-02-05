@@ -1,3 +1,81 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.background-home {
+  background-image: url();
+  padding: 20px;
+}
+.search-area {
+  width: 700px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 30px auto;
+  padding: 20px;
+}
+.search-contents {
+  background-color: skyblue;
+  padding: 10px;
+}
+.search-title {
+  text-align: center;
+  margin: 20px 30px;
+  padding: 20px;
+  background-color: orange;
+}
+.search {
+  margin: 10px 30px;
+}
+.serach-area {
+  display: flex;
+}
+.search-window {
+  height: 40px;
+  width: 440px;
+  background-color: orange;
+  border-radius: 10px;
+}
+.search-window input#search {
+  width: 100%;
+  height: 36px;
+  font-size: 20px;
+}
+.search-button {
+  height: 40px;
+  width: 100px;
+  background-color: orange;
+  border-radius: 10px;
+  margin: 0 auto 0 40px;
+  text-align: center;
+  padding: 10px;
+}
+.search-button input {
+  width: 100%;
+}
+.sub-main {
+  background-color: skyblue;
+  padding: 10px;
+}
+.sub-content-area {
+  width: 800px;
+  height: 530px;
+  background-color: #fff;
+  margin: 30px auto;
+  padding: 20px;
+}
+.sub-content-title {
+  background-color: orange;
+  padding: 10px;
+ }
+ .sub-contents {
+   background-color: silver;
+   padding: 20px;
+   display: flex;
+ }
+ .sub-content {
+   width: 160px;
+   height: 360px;
+   background-color: #fff;
+   margin: 10px;
+   border-radius: 10px;
+ }

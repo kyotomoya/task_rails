@@ -1,0 +1,94 @@
+.room-show-area {
+  background-color: #fff;
+  height: 500px;
+  width: 800px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.room-show-head {
+  padding: 6px;
+  margin-bottom: 10px;
+}
+.room-show-head h2 {
+  margin-left: 10px;
+}
+.room-details {
+  display:flex;
+}
+.room-contents {
+  background-color: #fff;
+  width: 500px;
+  padding: 10px 20px;
+}
+.room-image-area {
+
+  width: 460px;
+  height: 220px;
+}
+.room-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.room-content {
+
+  margin-top:10px;
+  display: flex;
+  padding: 6px;
+}
+
+.room-info {
+  margin-left: 20px;
+  width: 320px;
+  padding: 10px;
+}
+.room-name {
+  border-bottom: solid;
+  margin-bottom: 10px;
+  height: 30px;
+}
+.room-address {
+  border-bottom: solid;
+}
+.room-text {
+  margin-top: 10px;
+  width: 460px;
+  height: 60px;
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 6px;
+}
+.room-reservation {
+  background-color: #fff;
+  width: 240px;
+  height: 360px;
+  padding: 10px;
+  margin-left: 20px;
+}
+.room-reservation-contents {
+  padding: 10px;
+}
+.reservation-start, .reservation-end, .reservation-people {
+  margin: 10px auto;
+  padding: 10px;
+  border: solid 1px;
+}
+
+.room-price {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  border: solid 1px;
+}
+.reservation-button {
+  height: 30px;
+  width: 150px;
+  background-color: skyblue;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px auto 0 auto;
+  border: solid 1px;
+  border-radius: 10px;
+}

@@ -1,2 +1,36 @@
-<h1>トップページ</h1>
+<main>
+  <div class="background-home">
+    <div class="search-area">
+      <div class="search-contents">
+        <div class="search-title">
+          <h2>Potepan Shareでまだ体験したことのない体験をしよう</h2>
+        </div>
+        <div class="search">
+          <p>エリア</p>
+          <%= form_tag(rooms_path, :method => 'get') do %>
+          <div class="serach-area">
+            <div class="search-window">
+              <%= text_field_tag :search %>
+            </div>
+            <div class="search-button">
+              <%= submit_tag 'Search', :room_address => nil %>
+            </div>
+          </div>
+          <% end %>
+          <p>キーワード</p>
+          <%= form_tag(rooms_path, :method => 'get') do %>
+          <div class="serach-area">
+            <div class="search-window">
+              <%= text_field_tag :search %>
+            </div>
+            <div class="search-button">
+              <%= submit_tag 'Search', :room_address => nil %>
+            </div>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 

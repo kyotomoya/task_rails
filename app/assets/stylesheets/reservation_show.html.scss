@@ -1,0 +1,27 @@
+.reservation-show-area {
+  background-color: #fff;
+  margin: 30px auto 0 auto;
+  width: 700px;
+  border-radius: 10px;
+}
+.reservation-show-head {
+  padding: 10px;
+  margin-left: 10px;
+}
+.reservation-contents {
+  padding: 20px;
+}
+.reservation-content {
+  border-bottom: solid 1px;
+  margin-top: 20px;
+  display: flex;
+}
+.reservation-left {
+  width: 180px;
+}
+.reservation-right {
+  margin-left: 20px;
+}
+.reservation-left, .reservation-right {
+  padding: 10px;
+}

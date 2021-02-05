@@ -1,0 +1,80 @@
+
+<%= form_for @room do |f| %>
+<div class="background">
+  <div class="room-new-area">
+    <div class="room-hred">
+      <h2>ルーム情報登録</h2>
+    </div>
+    <div class="room-new-contents">
+      <div class="room-new-content">
+        <div class="room-new-content-left">
+          <div class="room-label">
+            <%= f.label :room_name ,"ルーム名" %>
+          </div>
+          <div class="room-label-red">
+            <%= f.label :room_name ,"必須" %>
+          </div>
+        </div>
+        <div class="room-new-content-right">
+          <%= f.text_field :room_name %>
+        </div>
+      </div>
+      <div class="room-new-content">
+        <div class="room-new-content-left">
+          <div class="room-label">
+            <%= f.label :room_text ,"ルーム紹介" %>
+          </div>
+          <div class="room-label-red">
+            <%= f.label :room_text ,"必須" %>
+          </div>
+        </div>
+        <div class="room-new-content-right">
+          <%= f.text_area :room_text %>
+        </div>
+      </div>
+      <div class="room-new-content">
+        <div class="room-new-content-left">
+          <div class="room-label">
+            <%= f.label :room_price ,"料金" %>
+          </div>
+          <div class="room-label-red">
+            <%= f.label :room_price ,"必須" %>
+          </div>
+        </div>
+        <div class="room-new-content-right">
+         <%= f.text_field :room_price %>
+        </div>
+      </div>
+      <div class="room-new-content">
+        <div class="room-new-content-left">
+          <div class="room-label">
+            <%= f.label :room_address ,"住所" %>
+          </div>
+          <div class="room-label-red">
+            <%= f.label :room_address ,"必須" %>
+          </div>
+        </div>
+        <div class="room-new-content-right">
+          <%= f.text_field :room_address %>
+        </div>
+      </div>
+      <div class="room-new-content">
+        <div class="room-new-content-left">
+          <div class="room-label">
+            <%= f.label :room_image, "ルーム画像" %>
+          </div>
+        </div>
+        <div class="room-new-content-right">
+          <%= f.file_field :room_image %>
+        </div>
+        <%= f.hidden_field :user_id, value: @user.id %>
+      </div>
+      <div class="room-create-button">
+        <%= f.submit "登録"%>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+<%= link_to "roomTop", :rooms %>
+      

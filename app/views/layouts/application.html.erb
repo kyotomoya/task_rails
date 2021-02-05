@@ -18,14 +18,6 @@
           <div class="header-logo">
             <h1><%= link_to "pote shere", root_path %></h1>
           </div>
-          <div class="header-search">
-            <div class="area">
-              <p>エリア</p>
-            </div>
-            <div class="keyword">
-              <p>キーワード</p>
-            </div>
-          </div>
           <div class="nav-area">
             <nav>
               <ul class="nav-flex">
@@ -43,7 +35,8 @@
     </header>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= link_to 'アカウント変更', edit_user_registration_path %>
+    
+    <%= link_to 'アカウント情報を表示する', edit_user_registration_path %>
     <%= yield %>
     <footer>
       <h3>©︎ 2020 POTEPAN.INC</h3>

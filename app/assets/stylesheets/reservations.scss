@@ -1,0 +1,56 @@
+// Place all the styles related to the reservations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.background-width {
+  margin: 20px;
+}
+table {
+  border-collapse:collapse;
+}
+.reservation-index-title {
+  padding: 10px;
+}
+.reservation-index-head {
+  border: 1px solid black;
+}
+.reservation-index-contents {
+  border: 1px solid black;
+}
+.reservation-index-name, .reservation-index-name, .reservation-index-text, .reservation-index-price, .reservation-index-start, .reservation-index-end {
+  padding: 10px;
+  text-align: center;
+}
+.reservation-index-name {
+  width: 140px;
+}
+.reservation-index-text {
+  width: 220px;
+}
+.reservation-index-price {
+  width: 100px;
+}
+.reservation-index-end {
+  border-right: solid black 1px;
+}
+.reservation-index-start, .reservation-index-end {
+  width: 150px;
+}
+
+.room-index-name, .room-index-text, .room-index-price, .room-index-address {
+  padding: 10px;
+  text-align: center;
+}
+.room-index-address {
+  width: 200px;
+  border-right: solid black 1px;
+}
+.room-index-name {
+  width: 160px;
+}
+.room-index-text {
+  width: 250px;
+}
+.room-index-price {
+  width: 100px;
+}

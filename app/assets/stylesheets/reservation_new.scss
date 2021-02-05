@@ -1,0 +1,46 @@
+.reservation-new-area {
+  background-color: #fff;
+  width: 500px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.reservation-price {
+  margin: 10px;
+}
+.reservation-new-contents {
+  padding: 10px;
+}
+.reservation-new-content {
+  margin-top: 10px;
+  width: 100%; 
+  padding: 10px;
+  display: flex;
+  border-bottom: solid 1px;
+}
+.reservation-head {
+  padding: 6px;
+}
+.reservation-new-content-left {
+  padding: 6px;
+  margin-right: 20px;
+  width: 120px;
+}
+.reservation-new-content-right {
+  padding: 6px;
+}
+.reservation-text {
+  margin: 20px 0;
+}
+.reservation-button-decision {
+  border: solid 1px;
+  background-color: rgb(4, 240, 142);
+  text-align: center;
+  padding: 6px;
+  width: 160px;
+  margin: 20px auto;
+}
+.reservation-button-decision input {
+  width: 100%;
+  height: 100%;
+}

@@ -8,4 +8,6 @@ class User < ApplicationRecord
   validates :profile, length: { maximum: 200 }
 
   mount_uploader :image, ImageUploader
+  has_many :reservations
+  has_many :rooms, through: :reservations
 end

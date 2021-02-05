@@ -27,28 +27,7 @@
 .header-logo {
   height: 70px;
   width:200px;
-  background-color: #fff;
   padding: 3px;
-}
-.header-search {
-  display: flex;
-  margin-left: 10px;
-  padding: 5px;
-  height: 70px;
-  width: 260px;
-  background-color: #fff;
-}
-.area {
-  background-color: red;
-  width: 110px;
-  height: 50px;
-  margin: 5px auto;
-}
-.keyword {
-  background-color: blue;
-  width: 110px;
-  height: 50px;
-  margin: 5px auto;
 }
 .nav-area {
   height: 70px;
@@ -64,16 +43,20 @@ li {
   list-style: none;
 }
 .login {
-  background-color: red;
   width: 130px;
   height: 50px;
   margin: 5px auto;
+  text-align: center;
+  padding: 10px;
+  border: solid 1px silver;
 }
 .registration {
-  background-color: blue;
   width: 130px;
   height: 50px;
   margin: 5px auto;
+  text-align: center;
+  padding: 10px;
+  border: solid 1px silver;
 }
 footer {
   background-color: orange;
